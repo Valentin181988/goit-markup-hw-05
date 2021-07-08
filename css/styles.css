@@ -182,6 +182,24 @@ img {
   color: var(--accent-color);
 }
 
+.menu-link {
+  position: relative;
+}
+
+.active-link::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+}
+
 .menu-icons {
   margin-right: 10px;
 }
