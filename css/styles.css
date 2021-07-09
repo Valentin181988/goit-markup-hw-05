@@ -29,6 +29,7 @@
   --modal-button-border: rgba(0, 0, 0, 0.1);
   --portfolio-overlay-bg-color: rgba(33, 150, 243, 0.9);
   --job-img-overlay-bg-color: rgba(47, 48, 58, 0.8);
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -683,10 +684,10 @@ img {
   margin-bottom: 4px;
 }
 
-.projects-blocks:hover,
+/*.projects-blocks:hover,
 .projects-blocks:focus {
   box-shadow: var(--box-shadow-pr);
-}
+}*/
 
 .projects-links,
 .projects-links:visited {
@@ -732,7 +733,7 @@ img {
   overflow: auto;
 
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms var(--cubic);
 }
 
 .portfolio-overlay-wrapper {
@@ -747,11 +748,17 @@ img {
 
 .projects-links {
   display: block;
+  transition: box-shadow 250ms var(--cubic);
+}
+
+.projects-links:hover,
+.projects-links:focus {
+  box-shadow: var(--box-shadow-pr);
 }
 
 /*=============End Portfolio=============*/
 
-/*=============Backdrop=============*/
+/*=============Modal=============*/
 .backdrop {
   position: fixed;
   top: 0;
@@ -760,8 +767,7 @@ img {
   height: 100vh;
   background-color: var(--shadow-three);
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms var(--cubic), visibility 250ms var(--cubic);
 }
 
 .modal {
@@ -802,4 +808,4 @@ img {
   visibility: hidden;
   pointer-events: none;
 }
-/*=============End backdrop=============*/
+/*=============End Modal=============*/
