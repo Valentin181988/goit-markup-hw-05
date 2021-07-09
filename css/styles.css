@@ -286,7 +286,6 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  /* identical to box height, or 187% */
 
   display: inline-block;
   align-items: center;
@@ -494,6 +493,7 @@ img {
   height: 100%;
   border-radius: 50%;
   background-color: var(--title-text-color);
+  transition: background-color 250ms var(--cubic);
 }
 
 .social-link:hover,
@@ -510,6 +510,7 @@ img {
   width: 20px;
   height: 20px;
   fill: var(--social-links);
+  transition: fill 250ms var(--cubic);
 }
 /*============= End Our team=============*/
 
@@ -534,10 +535,12 @@ img {
   height: 92px;
   border: 1px solid var(--social-links);
   border-radius: 4px;
+  transition: border 250ms var(--cubic);
 }
 
 .clients-links-icons {
   fill: var(--social-links);
+  transition: fill 250ms var(--cubic);
 }
 
 .clients-links:hover,
@@ -551,7 +554,7 @@ img {
   fill: var(--accent-color);
 }
 
-/*============= Our clients==============*/
+/*=============End Our clients==============*/
 
 /*=============Footer=============*/
 
@@ -568,11 +571,10 @@ img {
 
 .adress-link {
   line-height: 1.71;
-  /* or 171% */
-
   letter-spacing: 0.03em;
 
   color: var(--title-text-color);
+  transition: color 250ms var(--cubic);
 }
 
 .adress-list-link:not(:last-child) {
@@ -642,13 +644,9 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
-  /* identical to box height, or 162% */
-
   text-align: center;
   letter-spacing: 0.03em;
-}
 
-.wigets-link {
   background-color: var(--widgets-link-background-color);
   border-radius: 4px;
   cursor: pointer;
@@ -657,7 +655,8 @@ img {
   padding-top: 6px;
   padding-bottom: 6px;
   border: none;
-  transition: background-color 250ms var(--cubic), box-shadow 250ms var(--cubic);
+  transition: color 250ms var(--cubic), background-color 250ms var(--cubic),
+    box-shadow 250ms var(--cubic);
 }
 
 .wigets-link:hover,
