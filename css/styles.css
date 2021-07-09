@@ -787,6 +787,9 @@ img {
 
 .close-btn {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 8px;
   right: 8px;
   width: 30px;
