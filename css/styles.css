@@ -222,6 +222,7 @@ img {
 
 .menu-icons {
   fill: var(--secondary-text-color);
+  transition: fill 250ms var(--cubic);
 }
 
 .header-button:hover,
