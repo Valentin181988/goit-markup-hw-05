@@ -293,11 +293,8 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
 
-  color: var(--title-text-color);
-}
-
-.modal-btn {
   cursor: pointer;
+  color: var(--title-text-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px var(--shadow-hero-button);
   border-radius: 4px;
@@ -306,6 +303,14 @@ img {
   padding-top: 10px;
   padding-bottom: 10px;
   border: none;
+
+  transition: background-color 1000ms var(--cubic), box-shadow 250ms var(--cubic);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px var(--shadow-hero-button);
 }
 
 /*=============End Hero=============*/
