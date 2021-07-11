@@ -30,6 +30,7 @@
   --portfolio-overlay-bg-color: rgba(33, 150, 243, 0.9);
   --job-img-overlay-bg-color: rgba(47, 48, 58, 0.8);
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  --hero-button-hover-color: #188ce8;
 }
 
 body {
@@ -309,8 +310,8 @@ img {
 
 .modal-btn:hover,
 .modal-btn:focus {
-  background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px var(--shadow-hero-button);
+  background-color: var(--hero-button-hover-color);
+  box-shadow: var(--shadow-hero-button);
 }
 
 /*=============End Hero=============*/
