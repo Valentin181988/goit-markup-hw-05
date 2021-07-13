@@ -129,7 +129,6 @@ img {
   font-family: var(--secondary-font);
   font-size: 26px;
   line-height: 1.19;
-  /* identical to box height */
 
   letter-spacing: 0.03em;
 
@@ -153,7 +152,6 @@ img {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  /* identical to box height */
 
   letter-spacing: 0.03em;
   color: var(--title-text-color);
@@ -169,6 +167,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   transition: color 250ms var(--cubic);
+  outline: none;
 }
 
 .menu-link:visited {
@@ -304,6 +303,7 @@ img {
   padding-top: 10px;
   padding-bottom: 10px;
   border: none;
+  outline: none;
 
   transition: background-color 1000ms var(--cubic), box-shadow 250ms var(--cubic);
 }
@@ -543,6 +543,7 @@ img {
   border: 1px solid var(--social-links);
   border-radius: 4px;
   transition: border 250ms var(--cubic);
+  outline: none;
 }
 
 .clients-links-icons {
@@ -582,6 +583,7 @@ img {
 
   color: var(--title-text-color);
   transition: color 250ms var(--cubic);
+  outline: none;
 }
 
 .adress-list-link:not(:last-child) {
@@ -604,6 +606,7 @@ img {
 
 .social-link {
   background-color: var(--social-links-bg-f);
+  outline: none;
 }
 
 .social-link-icon.f-link-color {
@@ -653,6 +656,7 @@ img {
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
+  outline: none;
 
   background-color: var(--widgets-link-background-color);
   border-radius: 4px;
@@ -686,16 +690,10 @@ img {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  /* identical to box height, or 200% */
 
   letter-spacing: 0.06em;
   margin-bottom: 4px;
 }
-
-/*.projects-blocks:hover,
-.projects-blocks:focus {
-  box-shadow: var(--box-shadow-pr);
-}*/
 
 .projects-links,
 .projects-links:visited {
@@ -718,7 +716,6 @@ img {
 .projects-title {
   font-size: 16px;
   line-height: 1.88;
-  /* identical to box height, or 187% */
 
   letter-spacing: 0.03em;
 
@@ -757,6 +754,7 @@ img {
 .projects-links {
   display: block;
   transition: box-shadow 250ms var(--cubic);
+  outline: none;
 }
 
 .projects-links:hover,
